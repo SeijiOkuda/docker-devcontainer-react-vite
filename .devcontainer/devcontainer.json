@@ -1,0 +1,36 @@
+{
+    "name": "finishfish",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "frontend",
+    "workspaceFolder": "/usr/src/app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "dsznajder.es7-react-js-snippets",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "christian-kohler.path-intellisense",
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                "oderwat.indent-rainbow",
+                "formulahendry.auto-rename-tag",
+                "vscode-icons-team.vscode-icons",
+                "MariusAlchimavicius.json-to-ts",
+                "wix.vscode-import-cost"
+            ],
+            "settings": {
+                "files.encoding": "utf8",
+                "files.eol": "\\n",
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                }
+            }
+        }
+    },
+    "forwardPorts": [5173],
+    "remoteUser": "node"
+}
