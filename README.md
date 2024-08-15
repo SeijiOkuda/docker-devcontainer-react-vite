@@ -1,0 +1,2 @@
+# docker-devcontainer-react-vite
+Reactを使用できる高速なビルド環境をdockerのdevcontainerで実現
