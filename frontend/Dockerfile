@@ -2,11 +2,10 @@ FROM node:22.6.0-alpine
 
 WORKDIR /usr/src/app
 
-COPY finishfish .
+COPY app .
 
-RUN apk update \
-&& apk add --no-cache npm=10.8.0-r0
-
-RUN npm install
+RUN npm install \
+    # 必要な権限を node_modules に付与
+    && chown -R node:node /usr/src/app
 
 CMD ["npm", "run", "dev"]

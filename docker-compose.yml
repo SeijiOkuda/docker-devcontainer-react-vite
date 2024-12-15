@@ -6,7 +6,7 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ./frontend/finishfish:/usr/src/app
+      - ./frontend/app:/usr/src/app
       # node_modulesを無視する。
       - /usr/src/app/node_modules
     ports:
